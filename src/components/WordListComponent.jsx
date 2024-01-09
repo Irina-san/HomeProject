@@ -10,7 +10,7 @@ const WordListComponent = () => {
 
   return (
     <div>
-      <h3>Список слов:</h3>
+      <h3>Слова: </h3>
       <ul>
         {words.map((item) => (
           <li key={item.id}>{item.word}</li>

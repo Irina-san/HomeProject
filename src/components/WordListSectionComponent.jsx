@@ -7,7 +7,7 @@ import DeleteWordComponent from './DeleteWordComponent';
 const WordListSectionComponent = () => {
   return (
     <section>
-      <h2>Word List</h2>
+      <h2>Список новых слов</h2>
       <WordListComponent />
       <AddWordComponent />
       <EditWordComponent />

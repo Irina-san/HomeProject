@@ -8,17 +8,21 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: ['babel-loader'],
       },
       {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(eot|jpg|jpeg|png|svg)$/,
+        type: 'asset/resource',
+      },
     ],
   },
-
+  resolve: {
+    extensions: ['.jsx', '.js'],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
@@ -31,3 +35,10 @@ module.exports = {
   },
   mode: "development",
 };
+
+
+
+
+
+
+

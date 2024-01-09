@@ -1,5 +1,5 @@
 import React from 'react';
-import WordListSectionComponent from './WordListComponent.jsx';
+import WordListSectionComponent from './WordListSectionComponent.jsx';
 import WordCardSectionComponent from './WordCardSectionComponent.jsx';
 
 const HomePageComponent = () => {
